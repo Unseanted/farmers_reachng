@@ -1,0 +1,24 @@
+{
+  "name": "farmerreachng",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FarmerReachNG – Agritech platform connecting extension officers and farmers in Plateau State, Nigeria",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=apps/web\" \"npm run dev --workspace=apps/server\"",
+    "dev:web": "npm run dev --workspace=apps/web",
+    "dev:server": "npm run dev --workspace=apps/server",
+    "build": "npm run build --workspace=apps/web && npm run build --workspace=apps/server",
+    "start": "npm run start --workspace=apps/web",
+    "lint": "npm run lint --workspace=apps/web"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

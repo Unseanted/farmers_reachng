@@ -1,0 +1,10 @@
+{
+  "name": "@farmerreachng/shared",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "echo 'shared package'"
+  }
+}
